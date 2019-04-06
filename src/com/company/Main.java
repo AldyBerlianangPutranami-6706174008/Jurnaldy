@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Scanner aldy = new Scanner(System.in);
+        int jumlah = 0;
 
         System.out.print("Input : ");
         int input = aldy.nextInt();
@@ -16,8 +17,11 @@ public class Main {
 
         for (int i = 1; i <= input; i++) {
             int x = cari(i);
-            System.out.print(x + " ");
+            jumlah += x;
+
         }
+        System.out.print(input + " ");
+
 
     }
 
